@@ -1,2 +1,2 @@
 # digital-collections-kit
-Guide for general actions concerning digital collection management in Flanders Architecture Institute
+Nothing special, no rocket science. Just serves as a helpful guide and knowledge base for managing digital collections at VAi.
