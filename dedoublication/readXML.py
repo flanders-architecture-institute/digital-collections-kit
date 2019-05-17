@@ -6,12 +6,14 @@ tree = ET.parse(xmlloc)
 
 root = tree.getroot()
 filelist = []
-for file in root.findall('./{http://www.loc.gov/premis/v3}object'):
+for file in root.findall('./{http://www.loc.gov/premis/v3}object'): # We gebruiken ElementTree. Zie voor handleiding: https://docs.python.org/3/library/xml.etree.elementtree.html
     fileid = file.findtext('.//{http://www.loc.gov/premis/v3}objectIdentifierValue')
     filename = file.findtext('.//{http://www.loc.gov/premis/v3}originalName')
     contentlocation = file.findtext('.//{http://www.loc.gov/premis/v3}contentLocationValue')
     checksum = file.findtext('.//{http://www.loc.gov/premis/v3}messageDigest')
-    filedict = {'objectIdentifierValue':fileid, 'originalName':filename, 'contentLocationValue':contentlocation, 'messageDigest':checksum}
+    foldersinpath = contentlocation.split('/') # Returns een lijst met de folders
+    folder = foldersinpath[-2]
+    filedict = {'foldername':folder, 'objectIdentifierValue':fileid, 'originalName':filename, 'contentLocationValue':contentlocation, 'messageDigest':checksum}
     filelist.append(filedict)
     
 totallist = pd.DataFrame(filelist)
