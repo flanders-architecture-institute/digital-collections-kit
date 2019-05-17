@@ -1,12 +1,13 @@
-import xml.etree.ElementTree as ET
+import xml.etree.ElementTree as ET # We gebruiken ElementTree. Zie voor handleiding: https://docs.python.org/3/library/xml.etree.elementtree.html
 import pandas as pd
+import re # Goed overzicht voor regular expressions: https://www.regular-expressions.info/refcharacters.html
 
 xmlloc = "C:\\Users\\Wim Lo\\Desktop\\CK\\PREMIS_CK3.xml"
 tree = ET.parse(xmlloc)
 
 root = tree.getroot()
 filelist = []
-for file in root.findall('./{http://www.loc.gov/premis/v3}object'): # We gebruiken ElementTree. Zie voor handleiding: https://docs.python.org/3/library/xml.etree.elementtree.html
+for file in root.findall('./{http://www.loc.gov/premis/v3}object'): 
     fileid = file.findtext('.//{http://www.loc.gov/premis/v3}objectIdentifierValue')
     filename = file.findtext('.//{http://www.loc.gov/premis/v3}originalName')
     contentlocation = file.findtext('.//{http://www.loc.gov/premis/v3}contentLocationValue')
