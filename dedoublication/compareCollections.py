@@ -19,12 +19,17 @@ resdf['doubleCount'] = resdf.groupby('contentLocationValue')['contentLocationVal
 resdf = resdf.groupby(['contentLocationValue', 'objectIdentifierValue', 'originalName', 'messageDigest', 'doubleCount'])['filename'].agg('count').reset_index()
 resdf = resdf.drop(columns=['filename']) # Ziet er allemaal niet proper gecodeerd uit, maar het werkt
 
-# Stap 3: We maken een kolom 'uniek', 'nietUniek'
+# Stap 3: We maken een kolom om de status van de dubbel aan te geven.
+
 def uniek(cellValue):
-    if cellValue > 1:
-        return "notUnique"
-    else:
-        return "Unique"
+    if cellValue > 14:
+            return "probSystemFile"
+        elif cellValue > 4:
+            return "manyDupes"
+        elif cellValue > 1:
+            return "someDupes"
+        else:
+            return "unique"
 
 resdf['uniqueOnDisk'] = resdf['doubleCount'].apply(uniek)
 
