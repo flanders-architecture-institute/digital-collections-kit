@@ -12,9 +12,7 @@ for file in root.findall('./{http://www.loc.gov/premis/v3}object'):
     filename = file.findtext('.//{http://www.loc.gov/premis/v3}originalName')
     contentlocation = file.findtext('.//{http://www.loc.gov/premis/v3}contentLocationValue')
     checksum = file.findtext('.//{http://www.loc.gov/premis/v3}messageDigest')
-    foldersinpath = contentlocation.split('/') # Returns een lijst met de folders
-    folder = foldersinpath[-2]
-    filedict = {'foldername':folder, 'objectIdentifierValue':fileid, 'originalName':filename, 'contentLocationValue':contentlocation, 'messageDigest':checksum}
+    filedict = {'objectIdentifierValue':fileid, 'originalName':filename, 'contentLocationValue':contentlocation, 'messageDigest':checksum}
     filelist.append(filedict)
     
 totallist = pd.DataFrame(filelist)
