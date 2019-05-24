@@ -15,3 +15,4 @@ Another feature that is intensively used is Regex. Good Regex documentation can 
 
 Werken met de Linux-terminal
 * cheat.sh: github.com/theBlackBoxSociety (curl cheat.sh/)
+* rclone (rsync in de cloud)
