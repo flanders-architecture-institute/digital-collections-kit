@@ -14,10 +14,10 @@ subjectdf = subjectdf[subjectdf['contentLocationValue'].str.match(researchloc)] 
 
 # Stap 2: We zoeken hoe vaak een bestand uit de subjectdf voorkomt in het testcorp (a.h.v. MD5-checksum)
 
+testcorp['doubleCount'] = testcorp.groupby('messageDigest')['messageDigest'].transform('count')
+testcorp = testcorp.groupby(['messageDigest', 'doubleCount'])['filename'].agg('count').reset_index()
+testcorp = testcorp.drop(columns=['filename'])
 resdf = pd.merge(subjectdf, testcorp, on='messageDigest', how='left') # Er wordt een join gecreëerd - dit kan bij grote excels erg groot worden!!
-resdf['doubleCount'] = resdf.groupby('contentLocationValue')['contentLocationValue'].transform('count') # Dit geeft een gigaframe met per bestand het de bestanden uit testcorp waarvoor er een match bestaat. Dit naar een Excel brengen duurt erg lang.
-resdf = resdf.groupby(['contentLocationValue', 'objectIdentifierValue', 'originalName', 'messageDigest', 'doubleCount'])['filename'].agg('count').reset_index()
-resdf = resdf.drop(columns=['filename']) # Ziet er allemaal niet proper gecodeerd uit, maar het werkt
 
 # Stap 3: We maken een kolom om de status van de dubbel aan te geven.
 
@@ -41,4 +41,15 @@ def folder(cellValue):
     return cellValue
 
 resdf['researchedFolder'] = resdf['contentLocationValue'].apply(folder)
-resdf
+resdf['filesInFolder'] = resdf.groupby('researchedFolder')['researchedFolder'].transform('count')
+
+# Stap 5: We doen enkele berekeningen van het aantal occurrences van specifieke dubbelen
+resdf['uniquesInFolder'] = resdf.loc[resdf['uniqueOnDisk'] == 'unique'].groupby('researchedFolder')['uniqueOnDisk'].transform('count')
+resdf['someDupesInFolder'] = resdf.loc[resdf['uniqueOnDisk'] == 'someDupes'].groupby('researchedFolder')['uniqueOnDisk'].transform('count')
+resdf['manyDupesInFolder'] = resdf.loc[resdf['uniqueOnDisk'] == 'manyDupes'].groupby('researchedFolder')['uniqueOnDisk'].transform('count')
+resdf['probSystemFileInFolder'] = resdf.loc[resdf['uniqueOnDisk'] == 'probSystemFile'].groupby('researchedFolder')['uniqueOnDisk'].transform('count')
+
+# Stap 6: We creëren een dataframe met rij per folder. Op die manier krijgen we een helder overzicht.
+folderdf = resdf.drop(columns=['contentLocationValue', 'objectIdentifierValue', 'originalName', 'messageDigest', 'doubleCount', 'uniqueOnDisk'])
+folderdf = folderdf.groupby('researchedFolder')['filesInFolder', 'uniquesInFolder', 'someDupesInFolder', 'manyDupesInFolder', 'probSystemFileInFolder'].agg('mean').reset_index()
+folderdf 
