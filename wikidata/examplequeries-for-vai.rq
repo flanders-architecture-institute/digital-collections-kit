@@ -1,10 +1,10 @@
 # Getting all archive creators in collection Flanders Architecture Institute, with authority data
 
-SELECT ?archcreator ?archcreatorLabel ?archcreatorAltLabel ?archcreatorDescription ?geboortedatum ?sterfdatum ?geboorteplaatsLabel ?overlijdensplaatsLabel ?odisid 
+SELECT ?archcreator ?archcreatorLabel ?archcreatorAltLabel ?archcreatorDescription ?geboortedatum ?overlijdensdatum ?geboorteplaatsLabel ?overlijdensplaatsLabel ?odisid 
 WHERE { 
   ?archcreator wdt:P485 wd:Q14515828 . 
   OPTIONAL {?archcreator wdt:P569 ?geboortedatum .} 
-  OPTIONAL {?archcreator wdt:P570 ?sterfdatum .} 
+  OPTIONAL {?archcreator wdt:P570 ?overlijdensdatum .} 
   OPTIONAL {?archcreator wdt:P19 ?geboorteplaats .} 
   OPTIONAL {?archcreator wdt:P20 ?overlijdensplaats .} 
   OPTIONAL {?archcreator wdt:P2372 ?odisid .} 
