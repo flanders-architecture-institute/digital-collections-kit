@@ -8,5 +8,5 @@ WHERE {
   OPTIONAL {?archcreator wdt:P19 ?geboorteplaats .} 
   OPTIONAL {?archcreator wdt:P20 ?overlijdensplaats .} 
   OPTIONAL {?archcreator wdt:P2372 ?odisid .} 
-  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],nl,en". } 
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],nl,en". } # If there is Dutch text, give me the Dutch text. If there is no Dutch text, give me the English text
 }
