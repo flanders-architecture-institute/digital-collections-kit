@@ -1,6 +1,7 @@
 # digital-collections-kit
-Nothing special, no rocket science. Just serves as a helpful guide and knowledge base for managing digital collections at VAi.
-It's only the playing ground of VAi's digital archivist. So use at your own risk!!!
+This is the manual repository for operations on the (mainly) digital collections of VAi. The repository supports internal archival processes of VAi, but everybody is welcome to take a look and use the stuff on your own behalf. Yet be aware that you'll use it on your own risk! Many manuals are specifically for VAi or are only in experimental or unfinished mode.
+
+Please take a look at our Wiki: https://github.com/flanders-architecture-institute/digital-collections-kit/wiki
 
 ## Documentation
 We work with Pandas-libary for analyzing file-metadata. Pandas documentation can be found in:
