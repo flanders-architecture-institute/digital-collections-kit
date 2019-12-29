@@ -10,3 +10,16 @@ WHERE {
   OPTIONAL {?archcreator wdt:P2372 ?odisid .} 
   SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],nl,en". } # If there is Dutch text, give me the Dutch text. If there is no Dutch text, give me the English text
 }
+
+# Working with Engetrim data
+# Getting all drawings WITHOUT an author (FILTER NOT EXISTS), ordered by creation date.
+
+SELECT ?tekening ?tekeningLabel ?copyrightLabel ?starttime ?creator ?creatorLabel
+WHERE { 
+  ?tekening wdt:P361 wd:Q77201056 .
+  ?tekening wdt:P6216 ?copyright .
+  OPTIONAL {?tekening wdt:P580 ?starttime .}
+  FILTER NOT EXISTS {?tekening wdt:P170 ?creator .}
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],nl,en". } # If there is Dutch text, give me the Dutch text. If there is no Dutch text, give me the English text
+}
+ORDER BY ?starttime
