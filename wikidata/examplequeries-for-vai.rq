@@ -12,7 +12,7 @@ WHERE {
 }
 
 # Working with Engetrim data
-# Getting all drawings WITHOUT an author (FILTER NOT EXISTS), ordered by creation date.
+  # Getting all drawings WITHOUT an author (FILTER NOT EXISTS), ordered by creation date.
 
 SELECT ?tekening ?tekeningLabel ?copyrightLabel ?starttime ?creator ?creatorLabel
 WHERE { 
@@ -23,3 +23,17 @@ WHERE {
   SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],nl,en". } # If there is Dutch text, give me the Dutch text. If there is no Dutch text, give me the English text
 }
 ORDER BY ?starttime
+
+  # Getting all drawings WITH an author, date of death and copyrightstatus to check this
+
+SELECT ?object ?objectLabel ?archcreator ?archcreatorLabel ?geboortedatum ?overlijdensdatum ?odisid ?foihid ?copyLabel
+WHERE { 
+  ?object wdt:P170 ?archcreator .
+  ?object wdt:P361 wd:Q77201056 . 
+  OPTIONAL {?object wdt:P6216 ?copy .}
+  OPTIONAL {?archcreator wdt:P569 ?geboortedatum .} 
+  OPTIONAL {?archcreator wdt:P570 ?overlijdensdatum .} 
+  OPTIONAL {?archcreator wdt:P2372 ?odisid .}
+  OPTIONAL {?archcreator wdt:P1764 ?foihid .}
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],nl,en". } # If there is Dutch text, give me the Dutch text. If there is no Dutch text, give me the English text
+}
