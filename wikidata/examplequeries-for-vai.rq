@@ -24,12 +24,27 @@ WHERE {
 }
 ORDER BY ?starttime
 
-  # Getting all drawings WITH an author, date of death and copyrightstatus to check this
+  # Getting all drawings WITH an author, date of death and copyrightstatus to check this.
 
 SELECT ?object ?objectLabel ?archcreator ?archcreatorLabel ?geboortedatum ?overlijdensdatum ?odisid ?foihid ?copyLabel
 WHERE { 
   ?object wdt:P170 ?archcreator .
   ?object wdt:P361 wd:Q77201056 . 
+  OPTIONAL {?object wdt:P6216 ?copy .}
+  OPTIONAL {?archcreator wdt:P569 ?geboortedatum .} 
+  OPTIONAL {?archcreator wdt:P570 ?overlijdensdatum .} 
+  OPTIONAL {?archcreator wdt:P2372 ?odisid .}
+  OPTIONAL {?archcreator wdt:P1764 ?foihid .}
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],nl,en". } # If there is Dutch text, give me the Dutch text. If there is no Dutch text, give me the English text
+}
+
+  # The same as above, but only the ones with pictures this time (and give me the picture also)
+
+SELECT ?object ?objectLabel ?archcreator ?archcreatorLabel ?geboortedatum ?overlijdensdatum ?odisid ?foihid ?copyLabel ?pic
+WHERE { 
+  ?object wdt:P170 ?archcreator .
+  ?object wdt:P361 wd:Q77201056 .
+  ?object wdt:P18 ?pic
   OPTIONAL {?object wdt:P6216 ?copy .}
   OPTIONAL {?archcreator wdt:P569 ?geboortedatum .} 
   OPTIONAL {?archcreator wdt:P570 ?overlijdensdatum .} 
