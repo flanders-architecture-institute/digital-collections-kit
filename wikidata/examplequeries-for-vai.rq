@@ -25,6 +25,7 @@ WHERE {
 ORDER BY ?starttime
 
   # Getting all drawings WITH an author, date of death and copyrightstatus to check this.
+  # You can add 'FILTER(?overlijdensdatum < "1950-01-01"^^xsd:dateTime)' to only show authors died before a date
 
 SELECT ?object ?objectLabel ?archcreator ?archcreatorLabel ?geboortedatum ?overlijdensdatum ?odisid ?foihid ?copyLabel
 WHERE { 
