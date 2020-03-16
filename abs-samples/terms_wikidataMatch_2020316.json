@@ -1,0 +1,1219 @@
+{
+	"thesaurus_style": {
+		"1": {
+			"abs_id": "1",
+			"wikidata_id": "Q46261",
+			"abs_reference": "romaans"
+		},
+		"2": {
+			"abs_id": "2",
+			"wikidata_id": "Q176483",
+			"abs_reference": "gotiek"
+		},
+		"3": {
+			"abs_id": "3",
+			"wikidata_id": "Q236122",
+			"abs_reference": "renaissance"
+		},
+		"4": {
+			"abs_id": "4",
+			"wikidata_id": "Q1517921",
+			"abs_reference": "lodewijk-xiv-stijl-classicerende-barok"
+		},
+		"5": {
+			"abs_id": "5",
+			"wikidata_id": "Q21564105",
+			"abs_reference": "rococo"
+		},
+		"6": {
+			"abs_id": "6",
+			"wikidata_id": "Q170292",
+			"abs_reference": "classicisme"
+		},
+		"7": {
+			"abs_id": "7",
+			"wikidata_id": "Q191105",
+			"abs_reference": "empirestijl"
+		},
+		"8": {
+			"abs_id": "8",
+			"wikidata_id": "Q85809429",
+			"abs_reference": "traditioneel-vakwerkbouw"
+		},
+		"9": {
+			"abs_id": "9",
+			"wikidata_id": "Q1268134",
+			"abs_reference": "neostijl-beaux-artsstijl"
+		},
+		"10": {
+			"abs_id": "10",
+			"wikidata_id": "Q2479493",
+			"abs_reference": "neostijl-eclecticisme"
+		},
+		"11": {
+			"abs_id": "11",
+			"wikidata_id": "Q911397",
+			"abs_reference": "neostijl-neobarok"
+		},
+		"12": {
+			"abs_id": "12",
+			"wikidata_id": "Q384177",
+			"abs_reference": "neostijl-neo-egyptisch"
+		},
+		"13": {
+			"abs_id": "13",
+			"wikidata_id": "Q81617375",
+			"abs_reference": "neostijl-neo-vlaamse-renaissance"
+		},
+		"14": {
+			"abs_id": "14",
+			"wikidata_id": "Q85684352",
+			"abs_reference": "neostijl-neo-empire"
+		},
+		"15": {
+			"abs_id": "15",
+			"wikidata_id": "Q966571",
+			"abs_reference": "neostijl-neobyzantijns"
+		},
+		"16": {
+			"abs_id": "16",
+			"wikidata_id": "Q54111",
+			"abs_reference": "neostijl-neoclassicisme"
+		},
+		"17": {
+			"abs_id": "17",
+			"wikidata_id": "Q3501269",
+			"abs_reference": "neostijl-neoclassicisme-louis-philippestijl"
+		},
+		"18": {
+			"abs_id": "18",
+			"wikidata_id": "Q27958345",
+			"abs_reference": "neostijl-neoclassicisme-second-empire"
+		},
+		"19": {
+			"abs_id": "19",
+			"wikidata_id": "Q186363",
+			"abs_reference": "neostijl-neogotiek"
+		},
+		"20": {
+			"abs_id": "20",
+			"wikidata_id": "Q74156",
+			"abs_reference": "neostijl-neomoors"
+		},
+		"21": {
+			"abs_id": "21",
+			"wikidata_id": "Q502163",
+			"abs_reference": "neostijl-neorenaissance"
+		},
+		"22": {
+			"abs_id": "22",
+			"wikidata_id": "Q84418145",
+			"abs_reference": "neostijl-neorococo"
+		},
+		"23": {
+			"abs_id": "23",
+			"wikidata_id": "Q744373",
+			"abs_reference": "neostijl-neoromaans"
+		},
+		"24": {
+			"abs_id": "24",
+			"wikidata_id": "Q1295040",
+			"abs_reference": "art-nouveau"
+		},
+		"25": {
+			"abs_id": "25",
+			"wikidata_id": "Q2611710",
+			"abs_reference": "cottagestijl"
+		},
+		"26": {
+			"abs_id": "26",
+			"wikidata_id": "Q85816262",
+			"abs_reference": "regionalisme"
+		},
+		"27": {
+			"abs_id": "27",
+			"wikidata_id": "Q85687459",
+			"abs_reference": "neostijl-neotraditioneel"
+		},
+		"28": {
+			"abs_id": "28",
+			"wikidata_id": "Q12720942",
+			"abs_reference": "art-deco"
+		},
+		"29": {
+			"abs_id": "29",
+			"wikidata_id": "Q2085639",
+			"abs_reference": "modernisme"
+		},
+		"30": {
+			"abs_id": "30",
+			"wikidata_id": "Q42293889",
+			"abs_reference": "modernisme-expo-stijl"
+		},
+		"31": {
+			"abs_id": "31",
+			"wikidata_id": "Q994776",
+			"abs_reference": "brutalisme"
+		},
+		"32": {
+			"abs_id": "32",
+			"wikidata_id": "Q845318",
+			"abs_reference": "high-techstijl"
+		},
+		"33": {
+			"abs_id": "33",
+			"wikidata_id": "Q595448",
+			"abs_reference": "postmodernisme"
+		},
+		"34": {
+			"abs_id": "34",
+			"wikidata_id": "Q36118",
+			"abs_reference": "organische-architectuur"
+		},
+		"35": {
+			"abs_id": "35",
+			"wikidata_id": "Q85682793",
+			"abs_reference": "integratiearchitectuur"
+		},
+		"36": {
+			"abs_id": "36",
+			"wikidata_id": "Q840829",
+			"abs_reference": "barok"
+		},
+		"37": {
+			"abs_id": "37",
+			"wikidata_id": "Q85685942",
+			"abs_reference": "traditioneel"
+		},
+		"38": {
+			"abs_id": "38",
+			"wikidata_id": "Q1216982",
+			"abs_reference": "neostijl-revivalism"
+		},
+		"39": {
+			"abs_id": "39",
+			"wikidata_id": "Q1268134",
+			"abs_reference": "beaux-arts"
+		},
+		"40": {
+			"abs_id": "40",
+			"wikidata_id": "Q1513688",
+			"abs_reference": "neostijl-neo-grieks"
+		}
+	},
+	"thesaurus_discipline": {
+		"1": {
+			"abs_id": "1",
+			"wikidata_id": null,
+			"abs_reference": "architectuur"
+		},
+		"2": {
+			"abs_id": "2",
+			"wikidata_id": null,
+			"abs_reference": "binnenhuisarchitectuur"
+		},
+		"3": {
+			"abs_id": "3",
+			"wikidata_id": null,
+			"abs_reference": "landschapsarchitectuur"
+		},
+		"4": {
+			"abs_id": "4",
+			"wikidata_id": null,
+			"abs_reference": "tuinontwerp"
+		},
+		"5": {
+			"abs_id": "5",
+			"wikidata_id": null,
+			"abs_reference": "interieurinrichting"
+		},
+		"6": {
+			"abs_id": "6",
+			"wikidata_id": null,
+			"abs_reference": "tentoonstellingsinrichting"
+		},
+		"7": {
+			"abs_id": "7",
+			"wikidata_id": null,
+			"abs_reference": "grafische-vormgeving"
+		},
+		"8": {
+			"abs_id": "8",
+			"wikidata_id": null,
+			"abs_reference": "industriele-vormgeving"
+		},
+		"10": {
+			"abs_id": "10",
+			"wikidata_id": null,
+			"abs_reference": "scenografie"
+		},
+		"11": {
+			"abs_id": "11",
+			"wikidata_id": null,
+			"abs_reference": "stedenbouwkunde"
+		},
+		"13": {
+			"abs_id": "13",
+			"wikidata_id": null,
+			"abs_reference": "onbekend"
+		},
+		"14": {
+			"abs_id": "14",
+			"wikidata_id": null,
+			"abs_reference": "kostuumontwerp"
+		},
+		"15": {
+			"abs_id": "15",
+			"wikidata_id": null,
+			"abs_reference": "modeontwerp"
+		},
+		"16": {
+			"abs_id": "16",
+			"wikidata_id": null,
+			"abs_reference": "meubelontwerp"
+		},
+		"17": {
+			"abs_id": "17",
+			"wikidata_id": null,
+			"abs_reference": "juweelontwerp"
+		},
+		"18": {
+			"abs_id": "18",
+			"wikidata_id": null,
+			"abs_reference": "textielontwerp"
+		},
+		"19": {
+			"abs_id": "19",
+			"wikidata_id": null,
+			"abs_reference": "webdesign"
+		},
+		"20": {
+			"abs_id": "20",
+			"wikidata_id": "Q11642",
+			"abs_reference": "keramiek"
+		},
+		"21": {
+			"abs_id": "21",
+			"wikidata_id": "Q11629",
+			"abs_reference": "schilderkunst"
+		},
+		"22": {
+			"abs_id": "22",
+			"wikidata_id": "Q11634",
+			"abs_reference": "beeldhouwkunst"
+		},
+		"23": {
+			"abs_id": "23",
+			"wikidata_id": "Q1089246",
+			"abs_reference": "glaskunst"
+		},
+		"24": {
+			"abs_id": "24",
+			"wikidata_id": "Q11633",
+			"abs_reference": "fotografie"
+		},
+		"25": {
+			"abs_id": "25",
+			"wikidata_id": null,
+			"abs_reference": "edelsmeedkunst"
+		},
+		"26": {
+			"abs_id": "26",
+			"wikidata_id": "Q2921001",
+			"abs_reference": "tekenen"
+		},
+		"27": {
+			"abs_id": "27",
+			"wikidata_id": "Q953045",
+			"abs_reference": "metaalbewerking"
+		},
+		"28": {
+			"abs_id": "28",
+			"wikidata_id": "Q1823302",
+			"abs_reference": "lichtdesign"
+		}
+	},
+	"thesaurus_material": {
+		"1": {
+			"abs_id": "1",
+			"wikidata_id": "Q11472",
+			"abs_reference": "papier"
+		},
+		"2": {
+			"abs_id": "2",
+			"wikidata_id": "Q1143474",
+			"abs_reference": "calqueerpapier"
+		},
+		"3": {
+			"abs_id": "3",
+			"wikidata_id": "Q81623716",
+			"abs_reference": "tekenlinnen"
+		},
+		"4": {
+			"abs_id": "4",
+			"wikidata_id": "Q287",
+			"abs_reference": "hout"
+		},
+		"5": {
+			"abs_id": "5",
+			"wikidata_id": "Q389782",
+			"abs_reference": "karton"
+		},
+		"6": {
+			"abs_id": "6",
+			"wikidata_id": "Q11474",
+			"abs_reference": "plastic"
+		},
+		"7": {
+			"abs_id": "7",
+			"wikidata_id": "Q11426",
+			"abs_reference": "metaal"
+		},
+		"8": {
+			"abs_id": "8",
+			"wikidata_id": "Q274988",
+			"abs_reference": "pleister"
+		},
+		"9": {
+			"abs_id": "9",
+			"wikidata_id": "Q11469",
+			"abs_reference": "glas"
+		},
+		"10": {
+			"abs_id": "10",
+			"wikidata_id": "Q28823",
+			"abs_reference": "textiel"
+		}
+	},
+	"thesaurus_technique": {
+		"1": {
+			"abs_id": "1",
+			"wikidata_id": "Q422321",
+			"abs_reference": "blauwdruk"
+		},
+		"2": {
+			"abs_id": "2",
+			"wikidata_id": "Q85612002",
+			"abs_reference": "diazotypie"
+		},
+		"3": {
+			"abs_id": "3",
+			"wikidata_id": "Q55132886",
+			"abs_reference": "bruindruk-vandyke"
+		},
+		"4": {
+			"abs_id": "4",
+			"wikidata_id": "Q49465334",
+			"abs_reference": "fotokopie"
+		},
+		"5": {
+			"abs_id": "5",
+			"wikidata_id": "Q5372066",
+			"abs_reference": "hardcopy"
+		},
+		"7": {
+			"abs_id": "7",
+			"wikidata_id": "Q22669857",
+			"abs_reference": "collage"
+		},
+		"8": {
+			"abs_id": "8",
+			"wikidata_id": "Q11060274",
+			"abs_reference": "drukwerk-prent"
+		},
+		"9": {
+			"abs_id": "9",
+			"wikidata_id": "Q85621166",
+			"abs_reference": "potloodtekening"
+		},
+		"10": {
+			"abs_id": "10",
+			"wikidata_id": "Q84080586",
+			"abs_reference": "houtskooltekening"
+		},
+		"11": {
+			"abs_id": "11",
+			"wikidata_id": "Q19898787",
+			"abs_reference": "pentekening"
+		},
+		"13": {
+			"abs_id": "13",
+			"wikidata_id": "Q85621065",
+			"abs_reference": "krijttekening"
+		},
+		"14": {
+			"abs_id": "14",
+			"wikidata_id": "Q18761202",
+			"abs_reference": "aquarel"
+		},
+		"15": {
+			"abs_id": "15",
+			"wikidata_id": "Q85620896",
+			"abs_reference": "gewassen-pentekening-15"
+		},
+		"16": {
+			"abs_id": "16",
+			"wikidata_id": "Q85606925",
+			"abs_reference": "anilinedruk"
+		},
+		"17": {
+			"abs_id": "17",
+			"wikidata_id": "Q85620678",
+			"abs_reference": "ferro-gallusdruk-ferro-gallusprocede"
+		},
+		"18": {
+			"abs_id": "18",
+			"wikidata_id": "Q125191",
+			"abs_reference": "foto-18"
+		},
+		"19": {
+			"abs_id": "19",
+			"wikidata_id": "Q8191842",
+			"abs_reference": "gouache-plakkaatverf"
+		}
+	},
+	"thesaurus_object_type": {
+		"2": {
+			"abs_id": "2",
+			"wikidata_id": "Q6498959",
+			"abs_reference": "maquette"
+		},
+		"3": {
+			"abs_id": "3",
+			"wikidata_id": "Q1413646",
+			"abs_reference": "foto-positief"
+		},
+		"4": {
+			"abs_id": "4",
+			"wikidata_id": "Q595597",
+			"abs_reference": "foto-negatief"
+		},
+		"5": {
+			"abs_id": "5",
+			"wikidata_id": "Q12821369",
+			"abs_reference": "dia-positief"
+		},
+		"6": {
+			"abs_id": "6",
+			"wikidata_id": "Q85621807",
+			"abs_reference": "glasplaat-negatief"
+		},
+		"7": {
+			"abs_id": "7",
+			"wikidata_id": "Q429785",
+			"abs_reference": "affiche"
+		},
+		"8": {
+			"abs_id": "8",
+			"wikidata_id": "Q207977",
+			"abs_reference": "prototype"
+		},
+		"9": {
+			"abs_id": "9",
+			"wikidata_id": "Q77419819",
+			"abs_reference": "bouwtekening-presentatie"
+		},
+		"10": {
+			"abs_id": "10",
+			"wikidata_id": "Q77419822",
+			"abs_reference": "bouwtekening-technisch"
+		},
+		"11": {
+			"abs_id": "11",
+			"wikidata_id": "Q29527561",
+			"abs_reference": "bouwtekening-ontwerp"
+		},
+		"12": {
+			"abs_id": "12",
+			"wikidata_id": "Q5078274",
+			"abs_reference": "bouwtekening-schets"
+		},
+		"13": {
+			"abs_id": "13",
+			"wikidata_id": "Q77419823",
+			"abs_reference": "bouwtekening-detail"
+		},
+		"14": {
+			"abs_id": "14",
+			"wikidata_id": "Q488053",
+			"abs_reference": "album-foto"
+		},
+		"15": {
+			"abs_id": "15",
+			"wikidata_id": "Q1173065",
+			"abs_reference": "album-andere"
+		},
+		"16": {
+			"abs_id": "16",
+			"wikidata_id": "Q14745",
+			"abs_reference": "meubilair"
+		},
+		"17": {
+			"abs_id": "17",
+			"wikidata_id": "Q79509036",
+			"abs_reference": "portfolio"
+		},
+		"18": {
+			"abs_id": "18",
+			"wikidata_id": null,
+			"abs_reference": "andere"
+		},
+		"19": {
+			"abs_id": "19",
+			"wikidata_id": "Q1284677",
+			"abs_reference": "bouwtekening-terreinplattegrond"
+		},
+		"20": {
+			"abs_id": "20",
+			"wikidata_id": "Q2647254",
+			"abs_reference": "bouwtekening-studie"
+		},
+		"21": {
+			"abs_id": "21",
+			"wikidata_id": "Q84078631",
+			"abs_reference": "fotodoos"
+		},
+		"22": {
+			"abs_id": "22",
+			"wikidata_id": "Q11060274",
+			"abs_reference": "prent"
+		}
+	},
+	"thesaurus_project_type_detail": {
+		"1": {
+			"abs_id": "1",
+			"wikidata_id": "Q364005",
+			"abs_reference": "kinderdagverblijven"
+		},
+		"4": {
+			"abs_id": "4",
+			"wikidata_id": "Q56055312",
+			"abs_reference": "grafmonumenten-4"
+		},
+		"5": {
+			"abs_id": "5",
+			"wikidata_id": "Q13402009",
+			"abs_reference": "appartementsgebouwen"
+		},
+		"6": {
+			"abs_id": "6",
+			"wikidata_id": "Q18761864",
+			"abs_reference": "bankgebouwen"
+		},
+		"7": {
+			"abs_id": "7",
+			"wikidata_id": "Q22908",
+			"abs_reference": "bejaardenhuisvesting"
+		},
+		"8": {
+			"abs_id": "8",
+			"wikidata_id": "Q7075",
+			"abs_reference": "bibliotheken"
+		},
+		"10": {
+			"abs_id": "10",
+			"wikidata_id": "Q16884952",
+			"abs_reference": "buitenverblijven"
+		},
+		"11": {
+			"abs_id": "11",
+			"wikidata_id": "Q850107",
+			"abs_reference": "bungalows"
+		},
+		"12": {
+			"abs_id": "12",
+			"wikidata_id": "Q212198",
+			"abs_reference": "cafes"
+		},
+		"13": {
+			"abs_id": "13",
+			"wikidata_id": "Q133215",
+			"abs_reference": "casinos"
+		},
+		"15": {
+			"abs_id": "15",
+			"wikidata_id": "Q41253",
+			"abs_reference": "bioscopen"
+		},
+		"17": {
+			"abs_id": "17",
+			"wikidata_id": "Q5300041",
+			"abs_reference": "dubbelwoningen"
+		},
+		"18": {
+			"abs_id": "18",
+			"wikidata_id": "Q83405",
+			"abs_reference": "fabrieksgebouwen"
+		},
+		"20": {
+			"abs_id": "20",
+			"wikidata_id": "Q22733",
+			"abs_reference": "garages"
+		},
+		"21": {
+			"abs_id": "21",
+			"wikidata_id": "Q489357",
+			"abs_reference": "hoeves"
+		},
+		"22": {
+			"abs_id": "22",
+			"wikidata_id": "Q27686",
+			"abs_reference": "hotelgebouwen"
+		},
+		"23": {
+			"abs_id": "23",
+			"wikidata_id": "Q875016",
+			"abs_reference": "rijhuizen"
+		},
+		"25": {
+			"abs_id": "25",
+			"wikidata_id": "Q3859715",
+			"abs_reference": "interieurontwerpen"
+		},
+		"28": {
+			"abs_id": "28",
+			"wikidata_id": "Q131263",
+			"abs_reference": "kazernes"
+		},
+		"29": {
+			"abs_id": "29",
+			"wikidata_id": "Q108325",
+			"abs_reference": "kapellen"
+		},
+		"30": {
+			"abs_id": "30",
+			"wikidata_id": "Q44613",
+			"abs_reference": "kloosters"
+		},
+		"31": {
+			"abs_id": "31",
+			"wikidata_id": "Q160742",
+			"abs_reference": "abdijen"
+		},
+		"33": {
+			"abs_id": "33",
+			"wikidata_id": "Q1362225",
+			"abs_reference": "magazijnen"
+		},
+		"36": {
+			"abs_id": "36",
+			"wikidata_id": "Q24699794",
+			"abs_reference": "musea"
+		},
+		"38": {
+			"abs_id": "38",
+			"wikidata_id": "Q22698",
+			"abs_reference": "parken"
+		},
+		"39": {
+			"abs_id": "39",
+			"wikidata_id": "Q607241",
+			"abs_reference": "pastorieen"
+		},
+		"42": {
+			"abs_id": "42",
+			"wikidata_id": "Q46124",
+			"abs_reference": "sanatoria"
+		},
+		"43": {
+			"abs_id": "43",
+			"wikidata_id": "Q1244442",
+			"abs_reference": "schoolgebouwen"
+		},
+		"44": {
+			"abs_id": "44",
+			"wikidata_id": "Q12301128",
+			"abs_reference": "sociale-huisvesting"
+		},
+		"45": {
+			"abs_id": "45",
+			"wikidata_id": "Q1076486",
+			"abs_reference": "sportgebouwen"
+		},
+		"46": {
+			"abs_id": "46",
+			"wikidata_id": "Q543654",
+			"abs_reference": "gemeentehuizen"
+		},
+		"47": {
+			"abs_id": "47",
+			"wikidata_id": "Q1365179",
+			"abs_reference": "stadspaleizen"
+		},
+		"48": {
+			"abs_id": "48",
+			"wikidata_id": "Q34627",
+			"abs_reference": "synagoges"
+		},
+		"49": {
+			"abs_id": "49",
+			"wikidata_id": "Q39364723",
+			"abs_reference": "ziekenhuizen"
+		},
+		"50": {
+			"abs_id": "50",
+			"wikidata_id": "Q77115",
+			"abs_reference": "gemeenschapscentra"
+		},
+		"51": {
+			"abs_id": "51",
+			"wikidata_id": "Q11707",
+			"abs_reference": "restaurants"
+		},
+		"52": {
+			"abs_id": "52",
+			"wikidata_id": "Q24354",
+			"abs_reference": "theatergebouwen"
+		},
+		"53": {
+			"abs_id": "53",
+			"wikidata_id": "Q8070591",
+			"abs_reference": "tuinontwerpen"
+		},
+		"54": {
+			"abs_id": "54",
+			"wikidata_id": "Q85823252",
+			"abs_reference": "tuinwijken"
+		},
+		"57": {
+			"abs_id": "57",
+			"wikidata_id": "Q3950",
+			"abs_reference": "villas"
+		},
+		"58": {
+			"abs_id": "58",
+			"wikidata_id": "Q213441",
+			"abs_reference": "winkels"
+		},
+		"60": {
+			"abs_id": "60",
+			"wikidata_id": "Q86204774",
+			"abs_reference": "tentoonstellingsinrichtingen"
+		},
+		"61": {
+			"abs_id": "61",
+			"wikidata_id": "Q2750108",
+			"abs_reference": "priorijen"
+		},
+		"62": {
+			"abs_id": "62",
+			"wikidata_id": "Q91165",
+			"abs_reference": "donjons"
+		},
+		"63": {
+			"abs_id": "63",
+			"wikidata_id": "Q2094773",
+			"abs_reference": "toonzalen"
+		},
+		"64": {
+			"abs_id": "64",
+			"wikidata_id": "Q44494",
+			"abs_reference": "molens"
+		},
+		"65": {
+			"abs_id": "65",
+			"wikidata_id": "Q1248784",
+			"abs_reference": "luchthavens"
+		},
+		"68": {
+			"abs_id": "68",
+			"wikidata_id": "Q1329623",
+			"abs_reference": "culturele-centra"
+		},
+		"69": {
+			"abs_id": "69",
+			"wikidata_id": "Q1302299",
+			"abs_reference": "jeugdcentra"
+		},
+		"70": {
+			"abs_id": "70",
+			"wikidata_id": "Q746628",
+			"abs_reference": "ateliers-werkruimten"
+		},
+		"71": {
+			"abs_id": "71",
+			"wikidata_id": "Q85820578",
+			"abs_reference": "vrijstaande-woningen"
+		},
+		"72": {
+			"abs_id": "72",
+			"wikidata_id": "Q86204352",
+			"abs_reference": "praktijkruimten"
+		},
+		"75": {
+			"abs_id": "75",
+			"wikidata_id": "Q2983893",
+			"abs_reference": "wijken"
+		},
+		"77": {
+			"abs_id": "77",
+			"wikidata_id": "Q205495",
+			"abs_reference": "benzinestations"
+		},
+		"79": {
+			"abs_id": "79",
+			"wikidata_id": "Q15077340",
+			"abs_reference": "herdenkingsmonumenten"
+		},
+		"80": {
+			"abs_id": "80",
+			"wikidata_id": "Q35054",
+			"abs_reference": "postkantoren"
+		},
+		"82": {
+			"abs_id": "82",
+			"wikidata_id": "Q517820",
+			"abs_reference": "koetshuizen"
+		},
+		"83": {
+			"abs_id": "83",
+			"wikidata_id": "Q214252",
+			"abs_reference": "stalgebouwen"
+		},
+		"85": {
+			"abs_id": "85",
+			"wikidata_id": "Q861951",
+			"abs_reference": "politiekantoren"
+		},
+		"86": {
+			"abs_id": "86",
+			"wikidata_id": "Q174782",
+			"abs_reference": "pleinen"
+		},
+		"87": {
+			"abs_id": "87",
+			"wikidata_id": "Q160645",
+			"abs_reference": "weeshuizen"
+		},
+		"88": {
+			"abs_id": "88",
+			"wikidata_id": "Q57659484",
+			"abs_reference": "tentoonstellingsgebouwen"
+		},
+		"89": {
+			"abs_id": "89",
+			"wikidata_id": "Q23413",
+			"abs_reference": "kastelen"
+		},
+		"90": {
+			"abs_id": "90",
+			"wikidata_id": "Q607241",
+			"abs_reference": "parochiecentra"
+		},
+		"91": {
+			"abs_id": "91",
+			"wikidata_id": "Q16970",
+			"abs_reference": "kerkgebouwen"
+		},
+		"92": {
+			"abs_id": "92",
+			"wikidata_id": "Q210999",
+			"abs_reference": "psychiatrische-instellingen"
+		},
+		"93": {
+			"abs_id": "93",
+			"wikidata_id": "Q86198719",
+			"abs_reference": "architectenwoningen"
+		},
+		"94": {
+			"abs_id": "94",
+			"wikidata_id": "Q635719",
+			"abs_reference": "archiefgebouwen"
+		},
+		"95": {
+			"abs_id": "95",
+			"wikidata_id": "Q12280",
+			"abs_reference": "bruggen"
+		},
+		"96": {
+			"abs_id": "96",
+			"wikidata_id": "Q85834701",
+			"abs_reference": "meubelontwerpen"
+		},
+		"97": {
+			"abs_id": "97",
+			"wikidata_id": "Q203443",
+			"abs_reference": "grafstenen"
+		},
+		"99": {
+			"abs_id": "99",
+			"wikidata_id": "Q1195942",
+			"abs_reference": "brandweerkazernes"
+		},
+		"100": {
+			"abs_id": "100",
+			"wikidata_id": "Q86211636",
+			"abs_reference": "half-vrijstaande-woningen"
+		},
+		"101": {
+			"abs_id": "101",
+			"wikidata_id": "Q6453233",
+			"abs_reference": "duplexwoningen"
+		},
+		"103": {
+			"abs_id": "103",
+			"wikidata_id": "Q86212165",
+			"abs_reference": "huizenrijen"
+		},
+		"104": {
+			"abs_id": "104",
+			"wikidata_id": "Q1007870",
+			"abs_reference": "galerieen"
+		},
+		"105": {
+			"abs_id": "105",
+			"wikidata_id": "Q12816129",
+			"abs_reference": "begijnhoven"
+		},
+		"106": {
+			"abs_id": "106",
+			"wikidata_id": "Q12819564",
+			"abs_reference": "stationsgebouwen"
+		},
+		"107": {
+			"abs_id": "107",
+			"wikidata_id": "Q43501",
+			"abs_reference": "dierentuinen"
+		},
+		"108": {
+			"abs_id": "108",
+			"wikidata_id": "Q805353",
+			"abs_reference": "balzalen"
+		},
+		"109": {
+			"abs_id": "109",
+			"wikidata_id": "Q179076",
+			"abs_reference": "beursgebouwen"
+		},
+		"110": {
+			"abs_id": "110",
+			"wikidata_id": "Q47003909",
+			"abs_reference": "drukkerijen"
+		},
+		"111": {
+			"abs_id": "111",
+			"wikidata_id": "Q57778855",
+			"abs_reference": "brouwerijen"
+		},
+		"112": {
+			"abs_id": "112",
+			"wikidata_id": "Q274393",
+			"abs_reference": "bakkerijen"
+		},
+		"113": {
+			"abs_id": "113",
+			"wikidata_id": "Q785952",
+			"abs_reference": "zwembaden"
+		},
+		"114": {
+			"abs_id": "114",
+			"wikidata_id": "Q14092",
+			"abs_reference": "sportzalen"
+		},
+		"115": {
+			"abs_id": "115",
+			"wikidata_id": "Q40558",
+			"abs_reference": "smidsen"
+		},
+		"116": {
+			"abs_id": "116",
+			"wikidata_id": "Q1961493",
+			"abs_reference": "gildehuizen"
+		},
+		"117": {
+			"abs_id": "117",
+			"wikidata_id": "Q2922450",
+			"abs_reference": "volkshuizen"
+		},
+		"118": {
+			"abs_id": "118",
+			"wikidata_id": "Q732577",
+			"abs_reference": "publicaties"
+		},
+		"119": {
+			"abs_id": "119",
+			"wikidata_id": "Q84490437",
+			"abs_reference": "noodwoningen"
+		},
+		"120": {
+			"abs_id": "120",
+			"wikidata_id": "Q81917",
+			"abs_reference": "verdedigingstorens"
+		},
+		"121": {
+			"abs_id": "121",
+			"wikidata_id": "Q875157",
+			"abs_reference": "vakantieoorden"
+		},
+		"122": {
+			"abs_id": "122",
+			"wikidata_id": "Q85833489",
+			"abs_reference": "banketzalen"
+		},
+		"123": {
+			"abs_id": "123",
+			"wikidata_id": "Q1787856",
+			"abs_reference": "materniteiten"
+		},
+		"124": {
+			"abs_id": "124",
+			"wikidata_id": "Q721931",
+			"abs_reference": "loodsen"
+		},
+		"125": {
+			"abs_id": "125",
+			"wikidata_id": "Q85822056",
+			"abs_reference": "vleeshallen"
+		},
+		"126": {
+			"abs_id": "126",
+			"wikidata_id": "Q385557",
+			"abs_reference": "slachthuizen"
+		},
+		"127": {
+			"abs_id": "127",
+			"wikidata_id": "Q131596",
+			"abs_reference": "boerderijen-complexen"
+		},
+		"128": {
+			"abs_id": "128",
+			"wikidata_id": "Q7138926",
+			"abs_reference": "parlementsgebouwen"
+		}
+	},
+	"thesaurus_project_type": {
+		"None": {
+			"wikidata_id": "Geef maar een error"
+		},
+		"1": {
+			"abs_id": "1",
+			"wikidata_id": "Q3947",
+			"abs_reference": "wonen-huis"
+		},
+		"2": {
+			"abs_id": "2",
+			"wikidata_id": "Q1498804",
+			"abs_reference": "wonen-appartementsgebouw"
+		},
+		"3": {
+			"abs_id": "3",
+			"wikidata_id": "Q294422",
+			"abs_reference": "openbaar-gebouw"
+		},
+		"4": {
+			"abs_id": "4",
+			"wikidata_id": "Q655686",
+			"abs_reference": "handel-en-diensten"
+		},
+		"5": {
+			"abs_id": "5",
+			"wikidata_id": "Q85667907",
+			"abs_reference": "industrie-en-nijverheid"
+		},
+		"6": {
+			"abs_id": "6",
+			"wikidata_id": "Q1021645",
+			"abs_reference": "kantoorgebouwen"
+		},
+		"7": {
+			"abs_id": "7",
+			"wikidata_id": "Q1244442",
+			"abs_reference": "onderwijs"
+		},
+		"8": {
+			"abs_id": "8",
+			"wikidata_id": "Q85666134",
+			"abs_reference": "gezondheid-en-welzijn"
+		},
+		"9": {
+			"abs_id": "9",
+			"wikidata_id": "Q566749",
+			"abs_reference": "bijgebouw"
+		},
+		"10": {
+			"abs_id": "10",
+			"wikidata_id": "Q85661503",
+			"abs_reference": "cultuur-en-recreatie"
+		},
+		"11": {
+			"abs_id": "11",
+			"wikidata_id": "Q24398318",
+			"abs_reference": "religie"
+		},
+		"12": {
+			"abs_id": "12",
+			"wikidata_id": "Q6023295",
+			"abs_reference": "funeraire-architectuur"
+		},
+		"13": {
+			"abs_id": "13",
+			"wikidata_id": "Q10480682",
+			"abs_reference": "landbouw"
+		},
+		"14": {
+			"abs_id": "14",
+			"wikidata_id": "Q85669078",
+			"abs_reference": "militair"
+		},
+		"15": {
+			"abs_id": "15",
+			"wikidata_id": "Q4989906",
+			"abs_reference": "monument"
+		},
+		"16": {
+			"abs_id": "16",
+			"wikidata_id": "Q56148050",
+			"abs_reference": "sociaal-maatschappelijk"
+		},
+		"17": {
+			"abs_id": "17",
+			"wikidata_id": "Q121359",
+			"abs_reference": "infrastructuur"
+		},
+		"18": {
+			"abs_id": "18",
+			"wikidata_id": "Q2015628",
+			"abs_reference": "plein-en-open-ruimte"
+		},
+		"19": {
+			"abs_id": "19",
+			"wikidata_id": "Q22698",
+			"abs_reference": "tuin-en-park"
+		},
+		"20": {
+			"abs_id": "20",
+			"wikidata_id": "Q85670334",
+			"abs_reference": "stedenbouw-en-landschap"
+		},
+		"21": {
+			"abs_id": "21",
+			"wikidata_id": "Q31807746",
+			"abs_reference": "interieur"
+		},
+		"22": {
+			"abs_id": "22",
+			"wikidata_id": "Q185925",
+			"abs_reference": "grafisch-design"
+		},
+		"24": {
+			"abs_id": "24",
+			"wikidata_id": null,
+			"abs_reference": "onbekend"
+		},
+		"26": {
+			"abs_id": "26",
+			"wikidata_id": "Q55315265",
+			"abs_reference": "opslagplaatsen"
+		},
+		"27": {
+			"abs_id": "27",
+			"wikidata_id": "Q85681726",
+			"abs_reference": "wonen-wooncomplex"
+		},
+		"28": {
+			"abs_id": "28",
+			"wikidata_id": "Q76130167",
+			"abs_reference": "onderzoek-en-wetenschap"
+		}
+	}
+}
