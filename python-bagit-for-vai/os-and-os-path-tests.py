@@ -1,7 +1,11 @@
 import os
 from os.path import getsize, join, relpath
 
+# https://github.com/tw4l/brunnhilde/blob/master/brunnhilde.py: Zeer veel nuttige voorbeelden voor os commands vinden we in de brunnhilde code
+
 path = r"path\to" # Gebruik de "r" en dan de string met backslashes voor Windowspaths. Je kunt ook gewone slashes gebruiken.
+
+#basics
 
 os.chdir(path) # os is nu de directory
 os.getcwd() # Hiermee controleer je nog eens of je in de juiste directory zit te werken
