@@ -21,8 +21,8 @@ for root, dirs, files in os.walk(path):
     print(root, "| aantal bytes: ", end=" ")
     print(sum(getsize(join(root, name)) for name in files), "| aantal bestanden:", end =" ") # per bestandsnaam (name) in de lijst (files) wordt de size berekend en opgeteld
     print(len(files))
-    if len(files) == 0 and len(dirs) == 0:
-        deleted_dirs.append(root)
+    if len(files) == 0 and len(dirs) == 0:  # m.a.w. als er 100 % zeker niets in de folder zit...
+        dirs_to_delete.append(root) # ... Lijst de folder dan op in een lijst genaamd dirs_to_delete
     
 print()
 print("directories to delete:")
