@@ -16,7 +16,7 @@ os.listdir(path) # Wat zit er eigenlijk in dit directory
 
 # Onderstaande code geeft per folder in de tree het aantal bytes en het aantal files per folder. Het genereert ook een lijst van lege folders die kunnen worden gedeleted.
 
-deleted_dirs = []
+dirs_to_delete = []
 for root, dirs, files in os.walk(path):
     print(root, "| aantal bytes: ", end=" ")
     print(sum(getsize(join(root, name)) for name in files), "| aantal bestanden:", end =" ") # per bestandsnaam (name) in de lijst (files) wordt de size berekend en opgeteld
@@ -26,21 +26,22 @@ for root, dirs, files in os.walk(path):
     
 print()
 print("directories to delete:")
-for deldir in deleted_dirs:
-    print(deldir)
-
-# Onderstaande code delete vervolgens lege folders op basis van de lijst. (Kan ook in bovenstaande code worden verwerkt, maar de lijst eerst checken is veiliger.
-
-for deldir in deleted_dirs:
+for deldir in dirs_to_delete:
+    print(deldir) # Controleer eerst of de lijst met dirs to delete klopt
+         
+#!! Noteer onderstaand codeblokje voor de zekerheid in een aparte Jupytercel
+for deldir in dirs_to_delete: # Onderstaande code delete vervolgens lege folders op basis van de lijst. (Kan ook in bovenstaande code worden verwerkt, maar de lijst eerst checken is veiliger.
          os.rmdir(deldir)
          print(deldir, "deleted")
          
 # Deze code maakt van een mappenstructuur van bestanden een platte lijst van bestanden.
 # De ordening wordt behouden door het path op te nemen in de naam.
+# folders worden in de bestandsnaam hier (in testmodus) gescheiden door een koppelteken. Aan te raden valt om in productie eerst de filename te wijzigen door alle underscores te vervangen in koppeltekens (Controleer) en vervolgens een underscore te nemen ter aanduiding van een folder.
 
+os.chdir(path) # Nodig om vlot te kunnen renamen (= verplaatsen)
 for root, dirs, files in os.walk(path):
     for name in files:
-        source = join(root,name)
-        source_relpath = os.path.relpath(source, start=path) # relpath geeft een relatief pad terug tot op een gespecifieerde rootdir.
-        new_filename = source_relpath.replace("\\", "-")
-        print(new_filename)
+        tempsource = join(root,name) # ieder file krijgt zijn absoluut path door root en filename te combineren.
+        source = os.path.relpath(tempsource, start=path) # Wij willen enkel een relatief path in de bestandsnaam steken. Via deze code krijg je een relatief path t.o.v. de variabele "path". Dit kunnen we verwerken in een nieuwe bestandsnaam...
+        destination = path + "\\" + source.replace("\\", "-") # ... Door simpel een backslash te vervangen door een koppelteken.
+        os.rename(source, destination)
