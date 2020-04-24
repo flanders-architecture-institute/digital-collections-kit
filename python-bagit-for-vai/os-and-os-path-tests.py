@@ -1,5 +1,5 @@
 import os
-from os.path import getsize, join
+from os.path import getsize, join, relpath
 
 path = r"path\to" # Gebruik de "r" en dan de string met backslashes voor Windowspaths. Je kunt ook gewone slashes gebruiken.
 
@@ -34,3 +34,13 @@ for deldir in deleted_dirs:
 for deldir in deleted_dirs:
          os.rmdir(deldir)
          print(deldir, "deleted")
+         
+# Deze code maakt van een mappenstructuur van bestanden een platte lijst van bestanden.
+# De ordening wordt behouden door het path op te nemen in de naam.
+
+for root, dirs, files in os.walk(path):
+    for name in files:
+        source = join(root,name)
+        source_relpath = os.path.relpath(source, start=path) # relpath geeft een relatief pad terug tot op een gespecifieerde rootdir.
+        new_filename = source_relpath.replace("\\", "-")
+        print(new_filename)
