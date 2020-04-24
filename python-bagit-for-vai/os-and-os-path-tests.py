@@ -1,4 +1,5 @@
 import os
+from os.path import getsize, join
 
 path = r"path\to" # Gebruik de "r" en dan de string met backslashes voor Windowspaths. Je kunt ook gewone slashes gebruiken.
 
@@ -16,7 +17,7 @@ os.listdir(path) # Wat zit er eigenlijk in dit directory
 # Onderstaande code geeft per folder in de tree het aantal bytes en het aantal files per folder. Het genereert ook een lijst van lege folders die kunnen worden gedeleted.
 
 deleted_dirs = []
-for root, dirs, files in os.walk(path2):
+for root, dirs, files in os.walk(path):
     print(root, "| aantal bytes: ", end=" ")
     print(sum(getsize(join(root, name)) for name in files), "| aantal bestanden:", end =" ") # per bestandsnaam (name) in de lijst (files) wordt de size berekend en opgeteld
     print(len(files))
@@ -27,3 +28,9 @@ print()
 print("directories to delete:")
 for deldir in deleted_dirs:
     print(deldir)
+
+# Onderstaande code delete vervolgens lege folders op basis van de lijst. (Kan ook in bovenstaande code worden verwerkt, maar de lijst eerst checken is veiliger.
+
+for deldir in deleted_dirs:
+         os.rmdir(deldir)
+         print(deldir, "deleted")
