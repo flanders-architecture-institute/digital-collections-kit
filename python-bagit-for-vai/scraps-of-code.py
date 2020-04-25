@@ -38,4 +38,10 @@ bag = bagit.Bag(path) # Vooraleer je een path als bag kunt valideren moet je dit
 print(bag.is_valid(fast=False, completeness_only=False)) # Deze functie geeft de waarde True of False terug.
 
 # Eén test: Een bag maken van de subdirectories
+# Dit is de basis
 
+from os.path import isdir
+
+for item in os.listdir(path):
+    if os.path.isdir(os.path.join(path, item)):
+        print(item)
