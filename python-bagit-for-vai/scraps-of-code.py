@@ -1,6 +1,9 @@
 # Heb je Anaconda geïnstalleerd, dan zit de bagit-module daar al in.
 # Vanuit een Python-interpreter van de map "Gent_Tunnel" op mijn Desktop een bag maken.
 # Contactnaam Wim Lo komt in de bag-info terecht.
+
+# Goeie docu! https://libraryofcongress.github.io/bagit-python/
+
 python -m bagit --contact-name 'WimLo' "c://Users//Wim Lo//Desktop//Gent_Tunnel"
 
 python -m bagit --contact-name --md5 'WimLo' "c://Users//Wim Lo//Desktop//Gent_Tunnel" #Enkel md5
