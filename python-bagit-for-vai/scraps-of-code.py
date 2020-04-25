@@ -3,6 +3,7 @@
 # Contactnaam Wim Lo komt in de bag-info terecht.
 
 # Goeie docu! https://libraryofcongress.github.io/bagit-python/
+# Nog beter: onderaan deze pagina https://github.com/LibraryOfCongress/bagit-python
 
 python -m bagit --contact-name 'WimLo' "c://Users//Wim Lo//Desktop//Gent_Tunnel"
 
