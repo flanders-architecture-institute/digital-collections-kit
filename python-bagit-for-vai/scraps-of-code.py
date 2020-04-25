@@ -37,11 +37,34 @@ for x, y in bag.entries.items(): # De bag-informatie weergeven
 bag = bagit.Bag(path) # Vooraleer je een path als bag kunt valideren moet je dit voor het systeem tot "bag" maken
 print(bag.is_valid(fast=False, completeness_only=False)) # Deze functie geeft de waarde True of False terug.
 
-# Eén test: Een bag maken van de subdirectories
-# Dit is de basis
+## Volgende code. Een bag maken van de rechtstreekse subdirectories
 
-from os.path import isdir
+import bagit
+import os
+from os.path import getsize, join, relpath, isdir
 
-for item in os.listdir(path):
-    if os.path.isdir(os.path.join(path, item)):
-        print(item)
+path = r"Windows\path\to"
+
+# De functies
+def create_bag(path):
+    messageDigestAlgorithms = ['md5']
+    bag_info = {'Contact-Name': 'Wim Lo', 
+                'Source-Organization': 'Flanders Architecture Institute'}
+    bag = bagit.make_bag(bag_dir = path, checksums = messageDigestAlgorithms, bag_info = bag_info)
+    
+def validate_bag(path):
+    bag = bagit.Bag(path) # Vooraleer je een path als bag kunt valideren moet je dit voor het systeem tot "bag" maken
+    print(path, "bag validity:", bag.is_valid(fast=False, completeness_only=False)) # Deze functie geeft de waarde True of False terug.
+
+# Bag maken (code toevoegen om een foutmelding te geven bij lege folder + optie om deze te verwijderen. Lege folders geven valse validities terug)
+for direc in os.listdir(path):
+    source_path = os.path.join(path, direc)
+    if os.path.isdir(source_path):
+        create_bag(source_path)
+        print(source_path, "bag created!")
+            
+# Bag valideren (Opvallend. Een bag die is gemaakt van een lege folder geeft een False validity terug)
+for direc in os.listdir(path):
+    source_path = os.path.join(path, direc)
+    if os.path.isdir(source_path):
+        validate_bag(source_path)
