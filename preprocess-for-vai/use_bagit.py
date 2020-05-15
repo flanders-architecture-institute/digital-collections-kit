@@ -4,10 +4,11 @@ import bagit
 import os
 from os.path import getsize, join, relpath, isdir
 
-# Functies
-path = r"path\to\folder"
+path = r"C:\path\to"
 
-def create_bag(path):
+# Functies
+
+def create_bag(path): # Functionaliteit toevoegen om een error te geven bij een lege map
     messageDigestAlgorithms = ['md5']
     bag_info = {'Contact-Name': 'Wim Lo', 
                 'Source-Organization': 'Flanders Architecture Institute'}
@@ -17,7 +18,30 @@ def create_bag(path):
 def validate_bag(path):
     bag = bagit.Bag(path) # Vooraleer je een path als bag kunt valideren moet je dit voor het systeem tot "bag" maken
     print(path, "bag validity:", bag.is_valid(fast=False, completeness_only=False)) # Deze functie geeft de waarde True of False terug.
+        
+def bag_from_subfolders(path): # Maak bags van de subfolders in één specifieke folder aangegeven met path
+    for direc in os.listdir(path):
+        source_path = os.path.join(path, direc)
+        if os.path.isdir(source_path):
+            create_bag(source_path)
+        
+def validate_subfolders(path): # Valideer subfolders als bags in één specifieke folder aangegeven met path
+    for direc in os.listdir(path):
+        source_path = os.path.join(path, direc)
+        if os.path.isdir(source_path):
+            validate_bag(source_path)
 
+# Subdirectories baggen
+bag_from_subfolders(path)
+
+# Een specifieke directory baggen
+create_bag(path)
+
+# Subdirectories valideren
+validate_subfolders(path)
+
+# Een specifieke directory valideren
+validate_bag(path)
 
     
 ### DOCU (onderstaande tekst maakt geen deel uit van de code)
