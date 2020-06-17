@@ -11,6 +11,35 @@ WHERE {
   SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],nl,en". } # If there is Dutch text, give me the Dutch text. If there is no Dutch text, give me the English text
 }
 
+# Get all objects in collection Flanders Architecture Institute, WITHOUT a creator assigned, with optional date and optional copyright status
+# Function: Check copyright status of orphaned works
+SELECT ?tekening ?tekeningLabel ?archiefLabel ?copyrightLabel ?starttime ?creator ?creatorLabel
+WHERE { 
+  ?tekening wdt:P195 wd:Q77201544 .
+  ?tekening wdt:P361 ?archief .
+  OPTIONAL {?tekening wdt:P6216 ?copyright .}
+  OPTIONAL {?tekening wdt:P580 ?starttime .}
+  FILTER NOT EXISTS {?tekening wdt:P170 ?creator .}
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],nl,en". } # If there is Dutch text, give me the Dutch text. If there is no Dutch text, give me the English text
+}
+ORDER BY ?starttime
+
+# Get all objects in collection Flanders Architecture Institute, WITH a creator assigned, with optional date and optional copyright status. Give me date of death for author also.
+# Function: Check copyright status of works with known author
+# You can add 'FILTER(?dateofdeath < "1950-01-01"^^xsd:dateTime)' to only show authors died before a date
+SELECT ?tekening ?tekeningLabel ?archiefLabel ?creator ?creatorLabel ?starttime ?dateofdeath ?copyrightLabel
+WHERE { 
+  ?tekening wdt:P195 wd:Q77201544 .
+  ?tekening wdt:P361 ?archief .
+  ?tekening wdt:P170 ?creator .
+  OPTIONAL {?tekening wdt:P6216 ?copyright .}
+  OPTIONAL {?tekening wdt:P580 ?starttime .}
+  OPTIONAL {?creator wdt:P570 ?dateofdeath .} 
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],nl,en". } # If there is Dutch text, give me the Dutch text. If there is no Dutch text, give me the English text
+}
+ORDER BY ?starttime
+
+
 # Working with Engetrim data
   # Getting all drawings WITHOUT an author (FILTER NOT EXISTS), ordered by creation date.
 
