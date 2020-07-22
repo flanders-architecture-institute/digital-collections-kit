@@ -15,21 +15,39 @@ def create_bag(path): # Functionaliteit toevoegen om een error te geven bij een 
     bag = bagit.make_bag(bag_dir = path, checksums = messageDigestAlgorithms, bag_info = bag_info)
     print(path, "bag created!")
     
-def validate_bag(path):
+def validate_bag(path, fast=None, completeness_only=None):
     bag = bagit.Bag(path) # Vooraleer je een path als bag kunt valideren moet je dit voor het systeem tot "bag" maken
-    print(path, "bag validity:", bag.is_valid(fast=False, completeness_only=False)) # Deze functie geeft de waarde True of False terug.
-        
+    if fast == None and completeness_only == None:
+        print(path, "bag validity:", bag.is_valid(fast=False, completeness_only=False)) # Deze functie geeft de waarde True of False terug.
+    elif fast == True and completeness_only == None:
+        print(path, "bag validity:", bag.is_valid(fast=True, completeness_only=False))
+    else:
+        print("Deze combo is fout of nog niet geprogrammeerd.")
+              
+def update_bag(path): # Een bag na wijziging nieuwe manifests geven
+    bag = bagit.Bag(path)
+    bag.save(manifests=True)
+    
 def bag_from_subfolders(path): # Maak bags van de subfolders in één specifieke folder aangegeven met path
     for direc in os.listdir(path):
+        print("Working on:", direc)
         source_path = os.path.join(path, direc)
         if os.path.isdir(source_path):
             create_bag(source_path)
         
-def validate_subfolders(path): # Valideer subfolders als bags in één specifieke folder aangegeven met path
+def validate_subfolders(path, fast=None, completeness_only=None): # Valideer subfolders als bags in één specifieke folder aangegeven met path
     for direc in os.listdir(path):
+        print("Working on:", direc)
         source_path = os.path.join(path, direc)
         if os.path.isdir(source_path):
-            validate_bag(source_path)
+            validate_bag(source_path, fast, completeness_only)
+              
+def update_bag_from_subfolders(path): # bags in subdirectories nieuwe manifests geven
+    for direc in os.listdir(path):
+        print("Working on:", direc)
+        source_path = os.path.join(path, direc)
+        if os.path.isdir(source_path):
+              update_bag(source_path)
 
 # Subdirectories baggen
 bag_from_subfolders(path)
@@ -43,6 +61,11 @@ validate_subfolders(path)
 # Een specifieke directory valideren
 validate_bag(path)
 
+# Een bag updaten incl. wijziging van manifest (na deletion of addition van bestanden)
+update_bag(path)
+
+# Bags in subdirectories updaten incl. wijziging van manifest (na deletion of addition van bestanden)
+update_bag_from_subfolders(path)
     
 ### DOCU (onderstaande tekst maakt geen deel uit van de code)
 # Vanuit een Python-interpreter van de map "Gent_Tunnel" op mijn Desktop een bag maken.
