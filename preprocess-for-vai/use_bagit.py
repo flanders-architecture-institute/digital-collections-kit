@@ -4,8 +4,6 @@ import bagit
 import os
 from os.path import getsize, join, relpath, isdir
 
-path = r"C:\path\to"
-
 # Functies
 
 def create_bag(path): # Functionaliteit toevoegen om een error te geven bij een lege map
@@ -50,19 +48,25 @@ def update_bag_from_subfolders(path): # bags in subdirectories nieuwe manifests 
               update_bag(source_path)
 
 # Subdirectories baggen
+path = r"C:\path\to"
 bag_from_subfolders(path)
 
 # Een specifieke directory baggen
+path = r"C:\path\to"
 create_bag(path)
 
 # Subdirectories valideren
+path = r"C:\path\to"
 validate_subfolders(path)
 
 # Een specifieke directory valideren
+path = r"C:\path\to"
 validate_bag(path)
 
 # Een bag updaten incl. wijziging van manifest (na deletion of addition van bestanden)
+path = r"C:\path\to"
 update_bag(path)
 
 # Bags in subdirectories updaten incl. wijziging van manifest (na deletion of addition van bestanden)
+path = r"C:\path\to"
 update_bag_from_subfolders(path)
