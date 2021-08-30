@@ -115,25 +115,29 @@ def create_dirs_from_excel(path, excelpath):
 def change_dirnames_from_excel_nonrecursive(path, excelpath): # Functie om dirs te hernoemen. 
 # Specifiek handig om folders te hernoemen conform specs storage server
 # Gaat uit van één excel met een kolom orig_name en new_name. Foldernamen, niet folderpaths
-# Werkt met relative paths
 # Het werkt niet recursief. Slechts één niveau van folders
 
     dataframe = pd.read_excel(excelpath, na_filter=False, dtype=object)
     directorylist = dataframe.to_dict('records')
     os.chdir(path)
     for directory in directorylist:
-        os.rename(directory['orig_name'], directory['new_name'])
-        print("Directory", directory['orig_name'], "renamed in", directory['new_name'])
+        if os.path.isdir(directory['orig_name']):
+            os.rename(directory['orig_name'], directory['new_name'])
+            print("Directory", directory['orig_name'], "renamed in", directory['new_name'])
+        else:
+            print("Directory", directory['orig_name'], 'does not exist.')
         
 def change_dirnames_from_excel(path, excelpath): # Functie om dirs te hernoemen. 
 # Specifiek handig om folders te hernoemen conform specs storage server
 # Gaat uit van één excel met een kolom orig_name en new_name. Foldernamen, niet folderpaths
-# Werkt met relative paths
 # Werkt recursive
 
     dataframe = pd.read_excel(excelpath, na_filter=False, dtype=object)
     directorylist = dataframe.to_dict('records')
     os.chdir(path)
     for directory in directorylist:
-        os.renames(directory['orig_name'], directory['new_name'])
-        print("Directory", directory['orig_name'], "renamed in", directory['new_name'])
+        if os.path.isdir(directory['orig_name']):
+            os.renames(directory['orig_name'], directory['new_name'])
+            print("Directory", directory['orig_name'], "renamed in", directory['new_name'])
+        else:
+            print("Directory", directory['orig_name'], 'does not exist.')
